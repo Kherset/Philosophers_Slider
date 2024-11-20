@@ -124,7 +124,7 @@ header a {
   transform: translateY(50px);
   filter: blur(20px);
   opacity: 0;
-  animation: showContent 0.5s 0.5s linear 1 forwards;
+  animation: showContent 0.5s 1s linear 1 forwards;
 }
 
 @keyframes showContent {
@@ -136,11 +136,11 @@ header a {
 }
 
 .carousel .list .item:nth-child(1) .author {
-  animation-delay: 0.6s;
+  animation-delay: 0.5s;
 }
 
 .carousel .list .item:nth-child(1) .title {
-  animation-delay: 0.9s;
+  animation-delay: 1s;
 }
 
 .carousel .list .item:nth-child(1) .topic {
@@ -151,12 +151,16 @@ header a {
   animation-delay: 1.5s;
 }
 
+.carousel .list .item:nth-child(1) .button {
+  animation-delay: 2s;
+}
+
 /* Thumbnail */
 .thumbnail {
   bottom: 50px;
   display: flex;
   gap: 20px;
-  right: 50px;
+  left: 50%;
   position: absolute;
   width: max-content;
   z-index: 100;
@@ -199,11 +203,12 @@ header a {
 .arrows button {
   background-color: white;
   border-radius: 50%;
+  border: none;
   font-family: Cinzel;
   font-size: large;
   font-weight: bold;
   height: 50px;
-  transition: 0.3s;
+  transition: 0.5s;
   width: 50px;
   z-index: 100;
 }
@@ -215,7 +220,7 @@ header a {
 
 /* animation buttons */
 
-.arrows button {
+/* .arrows button {
   transform: translateY(50px);
   opacity: 0;
   animation: showButtons 0.5s 0.5s linear 1 forwards;
@@ -229,7 +234,7 @@ header a {
 }
 .arrows button {
   animation-delay: 1s;
-}
+} */
 
 /* Effect Next Click */
 .carousel.next .list .item:nth-child(1) img {
@@ -239,7 +244,7 @@ header a {
   height: 100px;
   position: absolute;
   width: 160px;
-  animation: showImage 0.5s linear 1 forwards;
+  animation: showImage 0.6s linear 1 forwards;
 }
 
 @keyframes showImage {
@@ -347,31 +352,13 @@ header a {
 }
 
 /* Responsive */
-@media screen and (max-width: 780px) {
+
+@media screen and (max-width: 678px) {
   .carousel .list .item .content {
     padding-right: 0;
   }
 
-  .thumbnail {
-    left: 30%;
-  }
-
-  .thumbnail .item {
-    height: 140px;
-    width: 100px;
-  }
-}
-
-@media screen and (max-width: 678px) {
   .carousel .list .item .content .title {
     font-size: 30px;
-  }
-  .thumbnail {
-    left: 40%;
-  }
-
-  .thumbnail .item {
-    height: 110px;
-    width: 60px;
   }
 }
