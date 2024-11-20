@@ -156,7 +156,7 @@ header a {
   bottom: 50px;
   display: flex;
   gap: 20px;
-  left: 50%;
+  right: 50px;
   position: absolute;
   width: max-content;
   z-index: 100;
@@ -347,12 +347,31 @@ header a {
 }
 
 /* Responsive */
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 780px) {
   .carousel .list .item .content {
     padding-right: 0;
   }
 
+  .thumbnail {
+    left: 30%;
+  }
+
+  .thumbnail .item {
+    height: 140px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 678px) {
   .carousel .list .item .content .title {
     font-size: 30px;
+  }
+  .thumbnail {
+    left: 40%;
+  }
+
+  .thumbnail .item {
+    height: 110px;
+    width: 60px;
   }
 }
