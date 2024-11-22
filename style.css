@@ -28,7 +28,7 @@ header {
   max-width: 80%;
   position: relative;
   width: 1140px;
-  z-index: 100;
+  z-index: 3;
 }
 
 header a {
@@ -163,7 +163,7 @@ header a {
   left: 50%;
   position: absolute;
   width: max-content;
-  z-index: 100;
+  z-index: 3;
 }
 
 .thumbnail .item {
@@ -210,7 +210,7 @@ header a {
   height: 50px;
   transition: 0.5s;
   width: 50px;
-  z-index: 100;
+  z-index: 3;
 }
 
 .arrows button:hover {
@@ -361,4 +361,28 @@ header a {
   .carousel .list .item .content .title {
     font-size: 30px;
   }
+}
+
+/* Modal */
+#bgModal {
+  background-color: transparent;
+  backdrop-filter: blur(6px);
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  top: -15px;
+  left: 0;
+  position: relative;
+  z-index: 4;
+}
+#modal {
+  background-color: #8f7d8c;
+  border-radius: 20px;
+  display: none;
+  height: 90vh;
+  width: 60vw;
+  position: relative;
+  top: 5vh;
+  left: calc(50% - 30vw);
+  z-index: 5;
 }

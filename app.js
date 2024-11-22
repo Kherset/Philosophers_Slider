@@ -39,3 +39,13 @@ function showSlider(type) {
 
   clearTimeout(runAutorun);
 }
+
+// Modal
+
+function openModal() {
+  let bgModal = document.getElementById("bgModal");
+  let modal = document.getElementById("modal");
+  bgModal.style.display = "block";
+  modal.style.display = "block";
+  console.log("Coucou");
+}

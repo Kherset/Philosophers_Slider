@@ -39,7 +39,7 @@
               Epictetus’s practical wisdom continues to inspire resilience and
               self-mastery.
             </div>
-            <button class="button">Learn More</button>
+            <button onclick="openModal()" class="button">Learn More</button>
           </div>
         </div>
         <div class="item">
@@ -136,7 +136,23 @@
         <button id="next">&gt</button>
       </div>
       <div class="time"></div>
+
+      <!-- Modal -->
+      <div id="bgModal">
+        <div id="modal">
+          <h2 class="name">Marcus Aurélius</h2>
+          <h3 class="lifespan">23 juillet 1991</h3>
+          <img src="./img/Marcus_Aurelius_2.webp" alt="" class="photo" />
+          <p class="biography">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+            corrupti totam adipisci nisi fugit qui at esse quo ab aliquam enim
+            cum, fuga voluptatem impedit accusantium reiciendis explicabo.
+            Sequi, quasi.
+          </p>
+        </div>
+      </div>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>
